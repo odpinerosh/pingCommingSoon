@@ -6,11 +6,16 @@
 
 html {
     font-size: 20px;
-    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+}
+
+body {
+   text-align: center; 
 }
 
 main {
-    width: 85%;
+    width: 95%;
     margin: 2rem auto;
     font-family: 'Libre Franklin', sans-serif;
     
@@ -101,6 +106,14 @@ main {
                 -webkit-box-shadow: 0px 4px 6px 1px rgb(125 113 113 / 30%);
                 -moz-box-shadow: 0px 4px 6px 1px rgb(125 113 113 / 30%);
             }
+
+            button:hover {
+                background-color: hsl(201, 93%, 70%);
+            }
+
+            button:active {
+                box-shadow: inset 10px 10px 10px 0 rgba(0,0,0,.5), inset -10px -10px 10px 0 rgba(255,255,255,.3);
+            }
     
     .imgDash {
         margin: 2rem auto;
@@ -124,9 +137,65 @@ main {
 
             .ico {
                 color:hsl(210, 71%, 42%);
+                border: 1px solid #fff;
+                border-radius: 50%;
+                padding: 0.2rem;
+            }
+
+            .ico:hover {
+                color: #fff;
+                background-color: hsl(210, 71%, 42%);
+                border: 1px solid hsl(210, 71%, 42%);
             }
 
         .copy {
             font-size: 0.8rem;
         }
 
+@media screen and (min-width: 600px)  {
+
+    html {
+        width: 950px;
+        max-width: 950px;
+    }
+
+        section {
+            margin-top: 1rem;
+        }
+                
+            h1 {
+                font-size: 2rem;
+            }
+
+            .divForm {
+                margin-top: 3rem;
+                display: grid;
+                grid-template-columns: 5% 60% 5% 25% 5%;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: ". field . command ."
+                                     ". alert . . .";
+            }
+
+                input {
+                    grid-area: field;
+                    height: 3rem;
+                    font-size: 1rem;
+                }
+
+                .provide {
+                    grid-area: alert;
+                    font-size: 0.8rem;
+                }
+
+                button {
+                    grid-area: command;
+                    height: 3rem;
+                    font-size: 1rem;
+                }
+
+            .divSocial {
+                width: 60%;
+                margin: 0 auto;
+            }
+
+}        
