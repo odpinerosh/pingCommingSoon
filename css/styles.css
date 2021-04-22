@@ -15,6 +15,7 @@ main {
     font-family: 'Libre Franklin', sans-serif;
     
 }
+
     .divText {
         height: 4rem;
         display: flex;
@@ -70,6 +71,22 @@ main {
                 
             }
 
+            .provide {
+                font-size: 0.6rem;
+                font-style: italic;
+                color: #fff;
+                margin-bottom: 0.7rem;
+            }
+
+            .provError {
+                color: hsl(0, 100%, 50%);
+            }
+
+            .error {
+                border: 1px solid hsl(0, 100%, 50%);
+            }
+
+
             button {
                 height: 2rem;
                 color: #fff;
@@ -79,6 +96,7 @@ main {
                 font-weight: 600;
                 border-radius: 50px;
                 cursor: pointer;
+                outline: none;
                 box-shadow: 0px 4px 6px 1px rgb(125 113 113 / 30%);
                 -webkit-box-shadow: 0px 4px 6px 1px rgb(125 113 113 / 30%);
                 -moz-box-shadow: 0px 4px 6px 1px rgb(125 113 113 / 30%);
@@ -111,3 +129,4 @@ main {
         .copy {
             font-size: 0.8rem;
         }
+

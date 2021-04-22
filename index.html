@@ -18,12 +18,13 @@
             <section>
                 <div class="divText">
                     <h1>We are launching <span>soon!</span></h1>
-                    <p>Subcribe and get notified</p>
+                    <p>Subcribe and get notified.</p>
                 </div>
-                <form action="" method="POST">
+                <form id="frmData">
                     <div class="divForm">
                         <input type="email" name="mail" id="txtMail" placeholder="Your email address...">
-                        <button>Notify Me</button>
+                        <p class="provide" id="txtProvide">Please provide a valid email address</p>
+                        <button id="btnNotify">Notify Me</button>
                     </div>
                 </form>
                 <img src="./images/illustration-dashboard.png" alt="The Dashboard" class="imgDash">
@@ -48,6 +49,7 @@
                 </div> 
             </footer>
         </main>
+        <script src="./scripts/functions.js"></script>
         <script src="https://kit.fontawesome.com/c00ba89096.js" crossorigin="anonymous"></script>
     </body>
 </html>
