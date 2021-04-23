@@ -152,12 +152,11 @@ main {
             font-size: 0.8rem;
         }
 
-@media screen and (min-width: 600px)  {
+        .to-hide {
+            display: none;
+        }
 
-    html {
-        width: 950px;
-        max-width: 950px;
-    }
+@media screen and (min-width: 600px)  {
 
         section {
             margin-top: 1rem;
